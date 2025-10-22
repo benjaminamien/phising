@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 pengirim = "cs.service000@gmail.com"
-penerima = "kalilinux3346@gmail.com"
-password = "lblk lmuj elzt edeb"  # ganti dengan App Password kamu
+penerima = "kalilinu6@gmail.com"
+password = "lblk lmuj elzt"  # ganti dengan App Password kamu
 
 # Buat pesan email
 pesan = MIMEMultipart("alternative")
