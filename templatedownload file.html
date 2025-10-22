@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>File untuk Diunduh</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+    }
+    table { border-collapse: collapse; }
+    a.button {
+      display: inline-block;
+      background: #4285F4;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 8px;
+      padding: 14px 32px;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background: #3367d6;
+    }
+  </style>
+</head>
+<body style="background-color:#f4f6f8; margin:0; padding:20px;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+
+        <!-- KONTEN UTAMA -->
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+               style="max-width:600px; width:100%; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
+
+          <!-- HEADER DENGAN PERPADUAN WARNA GOOGLE -->
+          <tr>
+            <td style="padding:24px; 
+                       background:linear-gradient(135deg, #4285F4 0%, #EA4335 33%, #FBBC05 66%, #34A853 100%);
+                       color:#ffffff;">
+              <table width="100%" role="presentation">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <h1 style="margin:0; font-size:22px; font-weight:600;">📄 Dokumen Penting</h1>
+                    <p style="margin:6px 0 0; font-size:13px; opacity:0.9;">Dikirim oleh Manajer Perusahaan</p>
+                  </td>
+                  <td align="right" style="vertical-align:middle;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+                         alt="Logo Google" width="150"
+                         style="display:block; border:0; outline:none; text-decoration:none;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ISI EMAIL -->
+          <tr>
+            <td style="padding:32px 24px; text-align:center;">
+              <p style="margin:0 0 16px; font-size:15px;">Halo Tim 👋</p>
+
+              <p style="margin:0 0 20px; font-size:14px; line-height:1.6; color:#555;">
+                Berikut ini adalah dokumen yang telah saya siapkan untuk kebutuhan kerja tim.  
+                Silakan klik tombol di bawah ini untuk mengunduh berkas.
+              </p>
+
+              <!-- TOMBOL DOWNLOAD -->
+              <a href="{{DOWNLOAD_LINK}}" target="_blank" class="button">
+                📥 Unduh Dokumen
+              </a>
+
+              <!-- LINK CADANGAN -->
+              <p style="margin-top:24px; font-size:13px; color:#666; line-height:1.5;">
+                Jika tombol di atas tidak berfungsi, buka tautan ini di browser Anda:
+                <br>
+                <a href="{{DOWNLOAD_LINK}}" target="_blank" style="color:#4285F4; word-break:break-all;">
+                  {{DOWNLOAD_LINK}}
+                </a>
+              </p>
+
+              <hr style="margin:32px 0; border:none; border-top:1px solid #eee;">
+
+              <p style="font-size:13px; color:#666; line-height:1.6;">
+                File ini bersifat internal. Mohon tidak dibagikan di luar tim tanpa izin.  
+                Jika ada kendala, hubungi 
+                <a href="mailto:{{CONTACT_EMAIL}}" style="color:#4285F4;">{{CONTACT_EMAIL}}</a>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background:#fafbfc; padding:18px 24px; font-size:12px; color:#98a0a6;">
+              <table width="100%" role="presentation">
+                <tr>
+                  <td>
+                    <div style="font-weight:600; color:#555;">{{MANAGER_NAME}}</div>
+                    <div>{{MANAGER_TITLE}} • {{COMPANY_NAME}}</div>
+                  </td>
+                  <td align="right">
+                    <a href="{{COMPANY_SITE}}" 
+                       style="color:#4285F4; text-decoration:none; font-size:12px;">
+                      Kunjungi Portal Perusahaan
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- COPYRIGHT -->
+        <table width="600" style="max-width:600px; width:100%; margin-top:12px;">
+          <tr>
+            <td style="font-size:11px; color:#9aa6af; text-align:center;">
+              &copy; {{CURRENT_YEAR}} {{COMPANY_NAME}} — Semua hak dilindungi.
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

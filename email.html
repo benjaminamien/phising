@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>File untuk Diunduh</title>
+  <!-- Preheader (some clients show this) -->
+  <style>
+    /* Minimal reset for email clients (kept small - most styling inline below) */
+    body { margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table { border-collapse:collapse; }
+  </style>
+</head>
+<body style="background-color:#f4f6f8; margin:0; padding:20px; font-family:Arial, Helvetica, sans-serif; color:#333333;">
+
+  <!-- Centering wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+
+        <!-- Main container (max-width) -->
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%; background:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px 24px; background:linear-gradient(90deg,#0b66c3,#2a9df4); color:#ffffff;">
+              <table width="100%" role="presentation">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <h1 style="margin:0; font-size:20px; font-weight:600;">Dokumen Penting: suratlamarankerja.pdf</h1>
+                  </td>
+                  <td align="right" style="vertical-align:middle;">
+                    <!-- Small company logo (optional) -->
+                    <img src="https://w7.pngwing.com/pngs/628/58/png-transparent-google-logo-google-search-google-now-google-text-trademark-service.png" alt="Logo" width="56" style="display:block; border:0; outline:none; text-decoration:none;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px;">
+              <p style="margin:0 0 12px; font-size:14px; line-height:1.5;">
+                Halo,
+              </p>
+
+              <p style="margin:0 0 16px; font-size:14px; line-height:1.5;">
+                Saya telah menyiapkan dokumen <strong>suratlamaranker.pdf</strong> Silakan unduh file melalui tombol di bawah ini.
+              </p>
+
+              <!-- CTA Button -->
+              <table cellpadding="0" cellspacing="0" role="presentation" style="margin:18px 0;">
+                <tr>
+                  <td align="center">
+                    <!-- Button uses a link; many email clients render this as expected -->
+                    <a href="{{DOWNLOAD_LINK}}" target="_blank" style="display:inline-block; text-decoration:none; padding:12px 22px; border-radius:6px; font-weight:600; font-size:14px; color:#ffffff; background:#0b66c3;">
+                      Unduh Dokumen
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Plain link fallback -->
+               <!-- 
+              <p style="margin:8px 0 0; font-size:13px; color:#555;">
+                Jika tombol tidak berfungsi, buka link berikut di browser:
+                <br>
+                <a href="{{DOWNLOAD_LINK}}" target="_blank" style="color:#0b66c3; word-break:break-all;">{{DOWNLOAD_LINK}}</a>
+              </p>
+               -->
+              <!-- File details -->
+               <!--
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:18px; border-top:1px solid #eef1f4; padding-top:12px;">
+                <tr>
+                  <td style="font-size:13px; color:#666; vertical-align:top; width:1%;">
+                    <strong>Nama File</strong>
+                  </td>
+                  <td style="font-size:13px; color:#444;">{{FILE_NAME}}</td>
+                </tr>
+                <tr>
+                  <td style="font-size:13px; color:#666; padding-top:8px;"><strong>Ukuran</strong></td>
+                  <td style="font-size:13px; color:#444; padding-top:8px;">{{FILE_SIZE}}</td>
+                </tr>
+                <tr>
+                  <td style="font-size:13px; color:#666; padding-top:8px;"><strong>Kedaluwarsa</strong></td>
+                  <td style="font-size:13px; color:#444; padding-top:8px;">{{EXPIRY_DATE}} (opsional)</td>
+                </tr>
+              </table>
+               -->
+              <!-- Note / security -->
+              <p style="margin:16px 0 0; font-size:13px; color:#666; line-height:1.4;">
+                Catatan: Link ini hanya untuk pegawai. Jangan bagikan tautan ini ke pihak luar. Jika ada masalah mengakses file, balas email ini atau hubungi <a href="mailto:{{CONTACT_EMAIL}}" style="color:#0b66c3;">{{CONTACT_EMAIL}}</a>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background:#fafbfc; padding:16px 24px; font-size:12px; color:#98a0a6;">
+              <table width="100%" role="presentation">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <div style="font-weight:600; color:#425a6b;">GOOGLE</div>
+                    <div>{{MANAGER_TITLE}} • {{COMPANY_NAME}}</div>
+                  </td>
+                  <td align="right" style="vertical-align:middle;">
+                    <a href="{{COMPANY_SITE}}" style="color:#0b66c3; text-decoration:none; font-size:12px;">Kunjungi Portal Perusahaan</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Small legal / contact line -->
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px; width:100%; margin-top:12px;">
+          <tr>
+            <td style="font-size:11px; color:#9aa6af; text-align:center;">
+              &copy; {{CURRENT_YEAR}} {{COMPANY_NAME}} — Semua hak dilindungi.
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
