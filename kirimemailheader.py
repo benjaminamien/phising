@@ -4,9 +4,9 @@ from email.mime.text import MIMEText
 from email.utils import formataddr
 from email.header import Header
 
-pengirim = "s67947141@gmail.com"
-penerima = "kalilinux3346@gmail.com"
-password = "zlfd oame ytiy cmgz"  # App Password Gmail
+pengirim = "s67941@gmail.com"
+penerima = "kalilinu6@gmail.com"
+password = "zlfd oame yz"  # App Password Gmail
 
 # Nama tampil yang diinginkan
 display_name = "googgle"
